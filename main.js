@@ -1,8 +1,15 @@
 var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var filter = document.getElementById('filter');
+
+// Form submit event
+form.addEventListener('submit', addItem);
+// Delete event
+itemList.addEventListener('click', removeItem);
+// Filter event
+filter.addEventListener('keyup', filterItems);
+
 // Add item
-console.log('disas lkj')
 function addItem(e){
   e.preventDefault();
 
@@ -31,15 +38,6 @@ function addItem(e){
   // Append li to list
   itemList.appendChild(li);
 }
-// Form submit event
-var submitOption = document.getElementById('submit-data');
-submitOption.addEventListener('click', addItem);
-// Delete event
-itemList.addEventListener('click', removeItem);
-// Filter event
-filter.addEventListener('keyup', filterItems);
-
-
 
 // Remove item
 function removeItem(e){
