@@ -67,7 +67,7 @@ newDiv.Id = 'hello1';
 newDiv.setAttribute('title', 'Hello Div');
 
 //Create text Node
-var newDivText = document.createTextNode('HEllo word');
+var newDivText = document.createTextNode('HEllo wo sfsfrd');
 
 // Add text to div
 newDiv.appendChild(newDivText);
